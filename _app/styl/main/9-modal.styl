@@ -1,0 +1,54 @@
+.white-popup
+	position: relative;
+	background: #FFF1D8
+	border-radius 15px
+	padding: 150px 20px;
+	width: auto;
+	max-width: 700px;
+	margin: 20px auto;
+	overflow hidden
+	background-image: url(../img/images/video-img.png)
+	background-repeat: no-repeat
+	background-position: center right 50px
+	background-size 70% 70%
+	@media screen and (max-width 560px)
+		padding 30px 20px 20px
+	@media screen and (max-width 385px)
+		padding 30px 15px 15px
+.form-modal
+	margin 0 auto
+.modal-title
+	text-align center
+	font-size: 26px
+	font-weight: bold
+	margin-bottom: 25px
+	@media screen and (max-width 560px)
+		font-size: 24px
+		margin-bottom: 20px
+	@media screen and (max-width 385px)
+		font-size: 22px
+		margin-bottom: 15px
+.mfp-close
+	top 10px
+	right 10px
+	&:active
+		top 10px
+.mfp-fade.mfp-bg
+	opacity: 0;
+	transition: all 0.5s ease-out;
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready
+	opacity: 0.8;
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing
+	opacity: 0;
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content
+	opacity: 0;
+	transition: all 0.5s ease-out;
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content
+	opacity: 1;
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content
+	opacity: 0;
