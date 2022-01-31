@@ -4,8 +4,17 @@
 	background-repeat: no-repeat
 	background-position: top center
 	background-size: cover
+	@media screen and (max-width 991px)
+		padding 90px 0
+	@media screen and (max-width 767px)
+		background-image: none
+		background-color: #FFF1D8
+	@media screen and (max-width 386px)
+		padding 60px 0
 .general-title-revs
 	margin-bottom: 120px
+	@media screen and (max-width 991px)
+		margin-bottom: 60px
 // .general-img-revs
 // 	top -140px
 // 	right 0
@@ -97,13 +106,13 @@
 .slick-prev
 	left 30.8%
 	@media screen and (max-width 767px)
-		left 18%
+		left 3%
 	@media screen and (max-width: 560px)
 		left 0
 .slick-next
 	right 30.8%
 	@media screen and (max-width 767px)
-		right 18%
+		right 3%
 	@media screen and (max-width: 560px)
 		right 0
 .video-wrapper-rev

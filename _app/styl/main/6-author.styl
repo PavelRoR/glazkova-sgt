@@ -1,9 +1,22 @@
 #author
 	padding 200px 0 100px
+	@media screen and (max-width 991px)
+		padding 120px 0 60px
+	@media screen and (max-width 560px)
+		padding 90px 0 60px
 .general-title-author-wrapper
 	position relative
 	padding 200px 200px
 	margin-bottom: -100px
+	@media screen and (min-width 1440px)
+		margin-left: 100px
+	@media screen and (max-width 991px)
+		padding 150px
+	@media screen and (max-width 560px)
+		padding 100px
+		margin-bottom: 40px
+	@media screen and (max-width 386px)
+		padding 20px
 	&:before
 		content: ''
 		display block
@@ -17,13 +30,40 @@
 		top 50px
 		left 100px
 		z-index -1
+		@media screen and (max-width 991px)
+			width 380px
+			height: 250px
+			top 70px
+			left 130px
+		@media screen and (max-width 560px)
+			width 300px
+			height: 200px
+			top 40px
+			left 90px
+		@media screen and (max-width 386px)
+			top -20px
+			left 20px
+			width 200px
+			height: 150px
 .general-title-author
 	max-width 600px
 	margin-left: 0
 .author-img
 	position relative
 	padding-top: 100%
+	@media screen and (max-width 991px)
+		padding-top: 0
 	img
 		position absolute
 		top -300px
 		left -100px
+		@media screen and (min-width 1440px)
+			left 0
+		@media screen and (max-width 1199px)
+			left -150px
+		@media screen and (max-width 991px)
+			position: static
+			display block
+			margin 0 auto 30px
+			width 100%
+			max-width 700px

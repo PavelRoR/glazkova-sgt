@@ -91,6 +91,12 @@ footer
 		text-decoration none
 		color #fff
 		background-color: #5BBEAC - 20%
+	@media screen and (max-width 991px)
+		padding 18px 30px
+	@media screen and (max-width 560px)
+		font-size: 18px
+	@media screen and (max-width 386px)
+		padding 18px 23px
 .general-title
 	font-family: CR
 	font-size: 60px
@@ -111,6 +117,18 @@ footer
 	&-center
 		span
 			text-align center
+	@media screen and (max-width 991px)
+		font-size: 40px
+		line-height: 40px
+	@media screen and (max-width 560px)
+		font-size: 36px
+		margin-bottom: 40px
+	@media screen and (max-width 386px)
+		font-size: 30px
+		text-align center
+		margin-bottom: 30px
+		&-span
+			text-align center
 .dot-span
 	position relative
 	display inline-block
@@ -121,7 +139,7 @@ footer
 		width 10px
 		height: 10px
 		transform: rotate(45deg)
-		top calc(50% - 3px)
+		top calc(50% - 4px)
 		left 0
 		right 0
 		margin 0 auto
@@ -129,6 +147,15 @@ footer
 		background-color: #5BBEAC
 	&-yellow:before
 		background-color: #EDCC90
+	@media screen and (max-width 991px)
+		&:before
+			width 5px
+			height: 5px
+			top calc(50% - 2px)
+	@media screen and (max-width 386px)
+		&:before
+			width 4px
+			height: 4px
 .general-img
 	position absolute
 	z-index -1
@@ -136,17 +163,24 @@ footer
 	display none
 @media screen and (max-width 991px)
 	.d-mobile
-		display block
+		display block !important
 	.d-desktop
-		display none
+		display none !important
 .general-list
 	margin-left: 20px
+	@media screen and (max-width 991px)
+		margin-left: 0
 	li
 		list-style: none
 		position relative
 		margin-bottom: 35px
 		padding-left: 60px
 		font-size: 24px
+		text-align: left
+		@media screen and (max-width 991px)
+			margin-bottom: 20px
+			font-size: 18px
+			padding-left: 25px
 		&:before
 			content: ''
 			display block
@@ -157,6 +191,9 @@ footer
 			transform: rotate(45deg)
 			top 11px
 			left 0
+			@media screen and (max-width 991px)
+				width 10px
+				height: 10px
 	&-2
 		margin-left: 0
 		li
@@ -168,6 +205,8 @@ footer
 				height: 10px
 	.general-inner-list
 		margin -35px 0 35px 120px
+		@media screen and (max-width 991px)
+			margin -20px 0 20px 40px
 		li
 			list-style: disc
 			padding-left: 0

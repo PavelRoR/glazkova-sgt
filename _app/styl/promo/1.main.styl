@@ -3,16 +3,19 @@
 	min-height calc(100vh - 162px)
 	@media screen and (max-width 991px)
 		text-align center
-		padding 40px 0
+		padding 0 0 60px
 	@media screen and (max-width 386px)
-		padding 30px 0
+		padding 0 0 40px
 .general-bg
 	right -200px
 	bottom: 0
+	@media screen and (max-width 560px)
+		display none
 .general-img-main-1
 	left -300px
 	top 250px
-.general-img-main-2
+	@media screen and (max-width 560px)
+		display none
 .main
 	&-subtitle
 		font-family: CR
@@ -48,3 +51,6 @@
 	max-width 560px
 	@media screen and (max-width 991px)
 		margin-bottom: 30px
+.button-main
+	@media screen and (max-width 1199px)
+		padding 9px 60px

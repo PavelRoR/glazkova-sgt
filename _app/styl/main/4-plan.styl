@@ -1,21 +1,35 @@
 #plan
 	padding 230px 0
+	@media screen and (max-width 991px)
+		padding 120px 0
+	@media screen and (max-width 560px)
+		padding 90px 0
 .general-title-plan
 	max-width 690px
 	margin-bottom: 30px
+	@media screen and (max-width 991px)
+		max-width 460px
 .general-bg-plan-1
 	right -500px
 	top 200px
+	@media screen and (max-width 560px)
+		display none
 .general-bg-plan-2
 	left -300px
 	bottom 0
+	@media screen and (max-width 560px)
+		display none
 .day
 	&-2
 		margin 50px 0 110px
+		@media screen and (max-width 991px)
+			margin 35px 0 60px
 	&-title
 		position relative
-		padding 60px 75px 30px 90px
+		padding 60px 75px 30px 70px
 		display inline-block
+		@media screen and (max-width 991px)
+			padding 30px 45px 30px 30px
 		&:before
 			content: ''
 			display block
@@ -27,17 +41,30 @@
 			background-position: center
 			background-size contain
 			top: 36px;
-			left: 22px;
+			left: 0
+			@media screen and (max-width 991px)
+				width 200px
+				height 100px
+				top 26px
+				left -10px
+				
 		h4
 			font-family: CR
 			font-size: 68px
 			font-weight: bold
 			color #5BBEAC
+			@media screen and (max-width 991px)
+				font-size: 48px
 	&-subtitle
 		font-size: 24px
 		font-weight: bold
 		text-transform uppercase
 		margin-bottom: 40px
+		@media screen and (max-width 991px)
+			font-size: 22px
+			margin-bottom: 25px
+		@media screen and (max-width 386px)
+			font-size: 18px
 	&-bonus
 		display table
 		width 100%
@@ -46,6 +73,17 @@
 		border-radius: 15px
 		background-color: #FAE0B1
 		padding 20px 80px
+		@media screen and (max-width 991px)
+			margin-top: 40px
+			padding 20px 30px
+		@media screen and (max-width 560px)
+			margin-top: 30px
+			padding 20px
+			display inline-block
+			width auto
+			max-width none
+		@media screen and (max-width 386px)
+			margin-top: 20px
 		&-title
 			padding-right: 65px
 			border-right: 5px solid #fff
@@ -56,9 +94,24 @@
 			font-weight: bold
 			color: #5BBEAC
 			text-transform uppercase
+			@media screen and (max-width 991px)
+				padding-right: 30px
+				text-align center
+			@media screen and (max-width 560px)
+				font-size: 26px
+				display inline-block
+				border: 0
+				border-bottom: 2px solid #fff
+				padding 0 0 20px
 		&-text
 			display table-cell
 			vertical-align middle
 			padding-left: 65px
 			font-size: 24px
 			color #4E4C4C
+			@media screen and (max-width 991px)
+				padding-left: 30px
+				font-size: 20px
+			@media screen and (max-width 560px)
+				padding 20px 0 0
+				font-size: 18px
