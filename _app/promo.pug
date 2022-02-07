@@ -1,17 +1,17 @@
 -var path = '../';
--var head_url = 'https://glazkova.mymv.ru/modern-gestalt-therapy/promo/';
+-var head_url = 'https://glazkova.iomp.online/mgt/promo/';
 -var head_title = 'Подпишись в Telegram';
 -var styles = path+'css/promo.min.css';
-// -var fav_ap = path+'favicon.svg';
+-var fav_ap = path+'favicon.svg';
 -var fav_ico = path+'favicon.ico';
 -var fav_png = path+'favicon.png';
 -var scripts = path+'js/promo.js';
 -var noref = true;
--var tk = true;
+-var io = true;
 -var ah = true;
 -var video = '';
 -var bot = 'https://shop.mastervision.su/index.php?r=form/telegram&id_bot=7';
--var footer_title = true;
+//-var footer_title = true;
 
 mixin b(cl,clb,href,p,target,id)
 	.button-wrapper(class=cl)
@@ -21,7 +21,7 @@ mixin gt(cl,h3)
 mixin imgs(cl, src ,alt)
 	img(class=cl src=path+src alt=alt)
 
-<!DOCTYPE html>
+doctype html
 html(lang="ru")
 	head
 		include pug/head

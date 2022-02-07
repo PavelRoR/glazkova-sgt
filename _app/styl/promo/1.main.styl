@@ -1,6 +1,6 @@
 #main
 	padding 0 0 90px
-	min-height calc(100vh - 162px)
+	min-height calc(100vh - 110px)
 	@media screen and (max-width 991px)
 		text-align center
 		padding 0 0 60px
@@ -14,6 +14,19 @@
 .general-img-main-1
 	left -300px
 	top 250px
+	@media screen and (max-width 560px)
+		display none
+.general-img-main-2
+	top 0
+	right: -115px
+	@media screen and (min-width 1440px)
+		bottom: -158px;
+		right: -400px;
+	@media screen and (max-width 1199px)
+		right -200px
+	@media screen and (max-width 991px)
+		top auto
+		bottom: -600px
 	@media screen and (max-width 560px)
 		display none
 .main
@@ -33,6 +46,7 @@
 		span
 			font-weight: bold
 			&.bonus-name
+				display block
 				text-transform uppercase
 				font-family: CR
 				color #fff

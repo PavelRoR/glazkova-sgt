@@ -5,6 +5,22 @@ section#revs
 				span.dot-span.dot-span-green О
 				|тзывы
 	.revs-slider-text
-		each n in [1,2,3,4,5,6,7,8,9]
-			a.text-rev-link(href=path+"img/revs/rev-"+n+".jpg" data-fancybox="text-revs"): img(src=path+"img/images/iphone.png", alt="Отзыв "+n).text-rev-img
-			//- a.text-rev-link(href=path+"img/revs/rev-"+n+".jpg" data-fancybox="text-revs"): img(src=path+"img/revs/rev-"+n+".min.png", alt="Отзыв "+n).text-rev-img
+		each n in [1,2,3,4,5,6,7]
+			//- a.text-rev-link(href=path+"img/revs/rev-"+n+".jpg" data-fancybox="text-revs"): img(src=path+"img/images/iphone.png", alt="Отзыв "+n).text-rev-img
+			a.text-rev-link(href=path+"img/revs/rev-"+n+".jpg" data-fancybox="text-revs"): img(src=path+"img/revs/rev-"+n+".min.png", alt="Отзыв "+n).text-rev-img
+	.container
+		.row
+			.col-md-6
+				.video-wrapper.video-wrapper-rev(data-youtube="ywnvUEhvwWQ" data-img=path+"img/revs/video-1.jpg")
+					img(src=path+"img/revs/video-1.jpg", alt="Отзыв 1")
+					.yt-button
+				.video-wrapper.video-wrapper-rev(data-youtube="BowOyimL06A" data-img=path+"img/revs/video-2.jpg")
+					img(src=path+"img/revs/video-2.jpg", alt="Отзыв 2")
+					.yt-button
+			.col-md-6
+				.video-wrapper.video-wrapper-rev(data-youtube="OTNXDH1D5LM" data-img=path+"img/revs/video-3.jpg")
+					img(src=path+"img/revs/video-3.jpg", alt="Отзыв 3")
+					.yt-button
+				.video-wrapper.video-wrapper-rev(data-youtube="BYha3roc0nc" data-img=path+"img/revs/video-4.jpg")
+					img(src=path+"img/revs/video-4.jpg", alt="Отзыв 4")
+					.yt-button
