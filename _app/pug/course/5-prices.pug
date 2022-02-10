@@ -1,0 +1,115 @@
+-var full_1 = '16 900р.';
+-var full_2 = '22 900р.';
+-var full_3 = '28 900р.';
+-var sale_1 = '2 000р.';
+-var sale_2 = '2 000р.';
+-var sale_3 = '2 000р.';
+-var today_1 = '14 900р.';
+-var today_2 = '20 900р.';
+-var today_3 = '26 900р.';
+-var link_1 = 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1323&clean=true&lg=ru';
+-var link_2 = 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1327&clean=true&lg=ru';
+-var link_3 = 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1331&clean=true&lg=ru';
+-var prepLink = '<?=$prepLink;?>';
+
+// -var full_1 = '16 900р.';
+// -var full_2 = '22 900р.';
+// -var full_3 = '28 900р.';
+// -var sale_1 = '<?=$sale1;?>';
+// -var sale_2 = '<?=$sale2;?>';
+// -var sale_3 = '<?=$sale3;?>';
+// -var today_1 = '<?=$today1;?>';
+// -var today_2 = '<?=$today2;?>';
+// -var today_3 = '<?=$today3;?>';
+// -var link_1 = '<?=$link1;?>';
+// -var link_2 = '<?=$link2;?>';
+// -var link_3 = '<?=$link3;?>';
+// -var prepLink = '<?=$prepLink;?>';
+
+section#prices
+	.container
+		.content
+			+imgs('general-img general-img-packets-1', 'img/icons/1-star.png', 'Звезда')
+			+imgs('general-img general-img-packets-2', 'img/icons/2-stars.png', '2 звезды')
+			+gt('general-title-center', 'Выберите свой пакет участия')
+			.row
+				.col-md-4
+					.packet.packet-1
+						.packet-head
+							h4.packet-head-title Модуль 1
+						.packet-body
+							p.packet-body-text «Рискните быть живым»: работа с Я в гештальт-терапии
+								span Включает в себя:
+							ul.packet-body-list
+								li - 10 уроков
+								li - 3 урока из дополнительного пакета
+								li - домашние задания с проверкой
+								li - обратная связь
+								li - групповые практики
+								li - практика в тройках
+								li - онлайн-встречи 1-2 раза в месяц
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span!=full_1
+							+b('', 'button-cost', link_1, 'Выбрать','_blank', 'link-1')
+				.col-md-4
+					.packet.packet-2
+						.packet-head
+							h4.packet-head-title Модуль 2
+						.packet-body
+							p.packet-body-text Гештальт-терапия для жизни: Я и другие. Работа с отношениями
+								span Включает в себя: 
+							ul.packet-body-list
+								li - 10 уроков 1-го модуля + 10 уроков 2-го модуля = 20 уроков
+								li - 6 уроков из дополнительных пакетов
+								li - домашние задания с проверкой
+								li - обратная связь
+								li - групповые практики
+								li - практика в тройках
+								li - онлайн-встречи 1-2 раза в месяц
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span!=full_2
+							+b('', 'button-cost', link_2, 'Выбрать','_blank', 'link-2')
+				.col-md-4
+					.packet.packet-3
+						.packet-head
+							h4.packet-head-title Модуль 3
+						.packet-body
+							p.packet-body-text 25 эффективных практик гештальт-терапии и не только на каждый день
+								span Включает в себя: 
+							ul.packet-body-list
+								li - 20 уроков 1-го и 2-го модулей + 25 эффективных практик
+								li - 9 уроков из дополнительных пакетов
+								li - домашние задания с проверкой
+								li - обратная связь
+								li - групповые практики
+								li - практика в тройках
+								li - онлайн-встречи 1-2 раза в месяц
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span!=full_3
+							+b('', 'button-cost', link_3, 'Выбрать','_blank', 'link-3')
+			|
+			|
+			<?php if($now < $dates[2]):?>
+			.prepayment
+				h4.prepayment-title Акция!!!
+				p.prepayment-text Платите 1&nbsp;000р., бонусом получаете 
+					span#prepayment-bonus 1&nbsp;000р. 
+					br
+					| На счет зачисляется 
+					span#prepayment-credited 2&nbsp;000р.
+				+b('button-center', 'prepayment-button', prepLink, 'Оплатить 1 000р.', '_blank', 'prepLink')
+			|
+			|
+			<?php endif;?>
+			|
+			|
+			//- <?php if($now < $dates[1]):?>
+			//- .timer
+			//- 	h4.timer-title Скидка уменьшится через:
+			//- 	.clock
+			//- |
+			//- |
+			//- <?php endif;?>

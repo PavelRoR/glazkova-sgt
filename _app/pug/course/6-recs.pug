@@ -1,0 +1,36 @@
+section#records
+	.container
+		.content
+			|
+			|
+			<?php if($now < $dates[3]){;?>
+			+gt('general-title-center', 'Записи мастер-класса')
+			.row
+				.col-md-6
+					.video
+						h4.video-title Запись мастер-класса от 15.02.22
+						.video-wrapper.video-wrapper-video
+							iframe(src!="https://youtube.com/embed/<?=$videos[0];?>?&modestbranding=1" allofullscreen)
+						p.video-text(class!=" <?=$hides[0];?>") Занятие состоится 15.02.22 в 19:00(мск)
+						p.video-text(class!=" <?=$hides[0];?>") Запись занятия будет выложена здесь 16.02.22, после 13:00(мск)
+				.col-md-6
+					.video
+						h4.video-title Запись мастер-класса от 16.02.22
+						.video-wrapper.video-wrapper-video
+							iframe(src!="https://youtube.com/embed/<?=$videos[1];?>?&modestbranding=1" allofullscreen)
+						p.video-text(class!=" <?=$hides[1];?>") Занятие состоится 16.02.22 в 19:00(мск)
+						p.video-text(class!=" <?=$hides[1];?>") Запись занятия будет выложена здесь 17.02.22, после 13:00(мск)
+			br
+			p.records-text Записи будут в свободном доступе до 21.02.22
+			|
+			|
+			<?php } else {;?>
+			h3.general-title.general-title-center Записей мастер-класса более нет 
+				span в свободном доступе
+			p.records-text Но Вы можете приобрести их полные версии всего за 590р. 
+				br
+				| и радоваться жизни вместе с теми, кто их уже смотрел
+			+b('button-wrapper-center', '', 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1349&clean=true&lg=ru', 'Купить записи', '_blank')
+			|
+			|
+			<?php }; ?>
