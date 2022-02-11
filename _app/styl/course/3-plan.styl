@@ -1,0 +1,88 @@
+#plan
+	padding 120px 0
+.general-title-plan
+	max-width 500px
+.modules-title
+	border-radius: 15px
+	border 1px solid #c4c4c4
+	padding 30px 30px 20px
+	cursor pointer
+	position relative
+	font-size: 40px
+	font-weight: bold
+	line-height: 40px
+	color: #5BBEAC
+	margin-bottom: 5px
+	small
+		display block
+		font-size: 20px
+		font-weight: normal
+		color #000
+	&:before
+		content: ''
+		display block
+		position absolute
+		top calc(50% - 9px)
+		right 30px
+		transform: rotate(-45deg)
+		border-left: 2px solid #c4c4c4
+		border-bottom: 2px solid #c4c4c4
+		width 15px
+		height: 15px
+		transition: all .3s ease
+.mgToggle:before
+	transform: rotate(135deg)
+.modules-content
+	display none
+	padding 20px 0
+.general-list-hidden
+	display none
+.ui-tabs .ui-tabs-nav li
+	font-size: 20px
+	transition: all .3s ease
+	max-width 105px
+	padding 5px
+.ui-tabs .ui-tabs-nav li.ui-tabs-active
+.ui-tabs .ui-tabs-nav li:hover
+	font-weight: bold
+	transition: all .3s ease
+.module
+	padding 0 30px 30px
+.lesson-title
+	font-size: 22px
+	font-weight: bold
+	margin-bottom: 20px
+	&-2
+		margin-top: 30px
+		position relative
+		display inline-block
+		cursor pointer
+		padding-right: 30px
+		&:before
+			content: ''
+			display block
+			position absolute
+			top calc(50% - 5px)
+			right 0
+			transform: rotate(-45deg)
+			border-left: 2px solid #000
+			border-bottom: 2px solid #000
+			width 10px
+			height: 10px
+			transition: all .3s ease
+.lesson-title-2.mgToggle:before
+	transform: rotate(135deg)
+	top 16px
+.general-inner-list-2
+	li
+		&:before
+			content: none
+.module-more
+	font-weight: bold
+	margin-bottom: 15px
+	margin-left: 20px
+	color #5bbeac
+.module-more + .general-list-2
+	margin-left: 40px
+.button-wrapper-plan
+	margin-top: 70px

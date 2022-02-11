@@ -1,18 +1,44 @@
 $(document).ready(function () {
 
-        /* Якорь */
-        $("a[href='#prices']").click(function (h) {
-            h.preventDefault();
-            var f = $(this).attr("href"),
-                g = $(f).offset().top;
-            $("body,html").animate({
-                scrollTop: g
-            }, 1500)
+    /* Якорь */
+    $("a[href='#prices']").click(function (h) {
+        h.preventDefault();
+        var f = $(this).attr("href"),
+            g = $(f).offset().top;
+        $("body,html").animate({
+            scrollTop: g
+        }, 1500)
+    });
+    $("#module-1, #module-2, #module-3").tabs({
+        hide: {
+            effect: "fade",
+            duration: 100
+        },
+        show: {
+            effect: "fade",
+            duration: 100
+        }
+    });
+    $(function () {
+        $('.modules-title').on('click', function () {
+            // $(this).removeClass('mgToggle').next().slideUp(500);
+            // $('.modules-title').removeClass('mgToggle');
+            if (!$(this).hasClass('mgToggle')) {
+                $(this).addClass('mgToggle').next().slideDown(500);
+            } else {
+                $(this).removeClass('mgToggle').next().slideUp(500);
+            }
         });
-        $( "#module-1, #module-2, #module-3" ).tabs({
-            hide: { effect: "fade", duration: 100 },
-            show: { effect: "fade", duration: 100 }
-          });
+    });
+    $(function () {
+        $('.general-list-show').on('click', function () {
+            if (!$(this).hasClass('mgToggle')) {
+                $(this).addClass('mgToggle').next().slideDown(500);
+            } else {
+                $(this).removeClass('mgToggle').next().slideUp(500);
+            }
+        });
+    });
     $('.text-rev-link').magnificPopup({
         type: 'image',
         mainClass: 'mfp-fade',
