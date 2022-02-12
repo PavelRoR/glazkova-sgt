@@ -1,7 +1,11 @@
 #plan
 	padding 120px 0
+	@media screen and (max-width 560px)
+		padding 90px 0
 .general-title-plan
 	max-width 500px
+	@media screen and (max-width 991px)
+		max-width 300px
 .modules-title
 	border-radius: 15px
 	border 1px solid #c4c4c4
@@ -13,11 +17,26 @@
 	line-height: 40px
 	color: #5BBEAC
 	margin-bottom: 5px
+	@media screen and (max-width 560px)
+		padding 20px 30px 20px 20px
+		font-size: 30px
+		line-height: 32px
+	span
+		display inline-block
+		font-size: 32px
+		// font-weight: normal
+		margin-left: 30px
+		color #000
+		@media screen and (max-width 560px)
+			font-size: 24px
+			margin-left: 20px
 	small
 		display block
 		font-size: 20px
 		font-weight: normal
 		color #000
+		@media screen and (max-width 560px)
+			font-size: 16px
 	&:before
 		content: ''
 		display block
@@ -30,34 +49,62 @@
 		width 15px
 		height: 15px
 		transition: all .3s ease
+		@media screen and (max-width 560px)
+			right 15px
 .mgToggle:before
 	transform: rotate(135deg)
 .modules-content
 	display none
 	padding 20px 0
+	@media screen and (max-width 560px)
+		padding 10px 0
 .general-list-hidden
 	display none
+.ui-tabs .ui-tabs-nav
+	@media screen and (max-width 560px)
+		padding 5px 0 0
 .ui-tabs .ui-tabs-nav li
 	font-size: 20px
 	transition: all .3s ease
+	width 100%
 	max-width 105px
 	padding 5px
+	float: none
+	display inline-block
+	@media screen and (max-width 560px)
+		padding 3px
+		font-size: 16px
+		max-width 70px
+		a
+			padding .5em
 .ui-tabs .ui-tabs-nav li.ui-tabs-active
 .ui-tabs .ui-tabs-nav li:hover
 	font-weight: bold
 	transition: all .3s ease
+	margin-bottom: 0
+	padding-bottom: 5px
+	@media screen and (max-width 560px)
+		padding-bottom: 3px
 .module
-	padding 0 30px 30px
+	padding 0 20px 30px
+	@media screen and (max-width 991px)
+		padding 0 0 30px
 .lesson-title
 	font-size: 22px
 	font-weight: bold
 	margin-bottom: 20px
+	@media screen and (max-width 560px)
+		font-size: 20px
+		margin-bottom: 15px
 	&-2
 		margin-top: 30px
 		position relative
 		display inline-block
 		cursor pointer
 		padding-right: 30px
+		@media screen and (max-width 560px)
+			padding-right: 20px
+			margin-top: 20px
 		&:before
 			content: ''
 			display block
@@ -84,5 +131,10 @@
 	color #5bbeac
 .module-more + .general-list-2
 	margin-left: 40px
+	@media screen and (max-width 560px)
+		margin-left: 25px
 .button-wrapper-plan
 	margin-top: 70px
+.ui-tabs .ui-tabs-panel
+	@media screen and (max-width 560px)
+		padding 20px 15px 10px
